@@ -38,7 +38,8 @@
       background-color #fff
       margin 0 auto
 .section-2
-  height 304px
+  height 386px
+  padding-top 88px
   .section-2-content
     width 1024px
     margin 0 auto
@@ -48,7 +49,11 @@
       .building-parallax
         width 508px
         height 316px
-        background-color red
+        background url('../img/parallax-building.png')
+        background-attachment fixed
+        background-size cover
+        background-position -275px top
+        background-repeat no-repeat
         position relative
         top 55px
     .general-info
@@ -62,6 +67,157 @@
         margin 0
         margin-bottom 25px
         font-weight 100
+.section-3
+  background-color #283e51
+  padding-top 135px
+  padding-bottom 104px
+  .section-3-content
+    width 834px
+    margin 0 auto
+    text-align center
+    .section-3-title
+      font-size 26px
+      text-align center
+      color #fff
+      h2
+        font-weight 100
+        margin 0
+        margin-bottom 13px
+    .section-3-divider
+      margin 0 auto 45px auto
+      width 100px
+      height 1px
+      background-color #fff
+    .section-3-description
+      margin-bottom 90px
+      p
+        width 639px
+        margin 0 auto
+        font-size 13px
+        font-weight 100
+        letter-spacing 0.1px
+        text-align center
+        color #fff
+        line-height 23px
+    .section-3-features
+      display flex
+      justify-content space-between
+      flex-wrap wrap
+      margin-bottom 70px
+      .rgv-feature-3
+        .feature-logo
+          img
+            width 54px
+            height 42px
+      [class*='rgv-feature-']
+        box-sizing border-box
+        width 404px
+        height 260px
+        margin-bottom 24px
+        display flex
+        justify-content center
+        align-items center
+        .feature-content
+          width 260px
+          text-align left
+          .feature-logo
+            margin-bottom 15px
+          .feature-title
+            h3
+              font-size 17.7px
+              letter-spacing .4px
+              margin 0
+              margin-bottom 11px
+          .feature-divider
+            width 180px
+            height 1px
+            margin-bottom 20px
+          .feature-description
+            p
+              font-size 12px
+              margin 0
+              line-height 17px
+              font-weight 100
+              letter-spacing 0.4px
+      .rgv-feature-blue
+        background-color #395265
+        border-left 20px solid #89a6b6
+        color #fff
+        .feature-divider
+          background-color #fff
+      .rgv-feature-white
+        background-color #f9f9f9
+        border-left 20px solid #afa48f
+        color #324a5c
+        .feature-divider
+          background-color #c7cbcf
+.section-4
+  .section-4-content
+    width 800px
+    margin 0 auto
+    padding-top 85px
+    padding-bottom 119px
+    .section-4-title
+      font-size 26px
+      text-align center
+      color #284052
+      h2
+        font-weight 100
+        margin 0
+        margin-bottom 13px
+    .section-4-divider
+      margin 0 auto 45px auto
+      width 100px
+      height 1px
+      background-color #979797
+    .section-4-description
+      margin-bottom 35px
+      p
+        margin 0
+        font-size 13px
+        font-weight 100
+        text-align center
+        color #283f52
+    .sectors
+      display flex 
+      flex-wrap wrap
+      [class*='sector-']
+        width 200px
+        box-sizing border-box
+        background-size cover
+        height 125px
+        .sector-overlay
+          width 100%
+          display flex
+          align-items center
+          justify-content center
+          height 100%
+          background-color #324a5c
+          opacity 0
+          transition 400ms opacity ease
+          p
+            margin 0
+            color #fff
+            font-size 19px
+      [class*='sector-']:hover
+        .sector-overlay
+          opacity 1
+      .sector-1
+        background-image url('../img/sectors/sector-1.jpg')
+      .sector-2
+        background-image url('../img/sectors/sector-2.png')
+      .sector-3
+        background-image url('../img/sectors/sector-3.jpg')
+      .sector-4
+        background-image url('../img/sectors/sector-4.png')
+      .sector-5
+        background-image url('../img/sectors/sector-5.png')
+      .sector-6
+        background-image url('../img/sectors/sector-6.png')
+      .sector-7
+        background-image url('../img/sectors/sector-7.jpg')
+      .sector-8
+        background-image url('../img/sectors/sector-8.png')
 .section-5
   height 34vw
   background-image url('../img/backgrounds/section-5.jpg')
@@ -92,7 +248,7 @@
   background-color #f2f2f2
   color #3e5d72
   &:hover
-    background-color #d7dcdc
+    background-color #CED2D2
 .button-blue
   background-color #7d97a6
   color #fff

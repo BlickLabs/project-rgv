@@ -29,7 +29,11 @@
     {% block js_project_config %}
     {% endblock %}
     <script src="js/{{ projectFilesName }}.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/11.1.0/js/smooth-scroll.min.js"></script>
     {% block js_inline %}
+    <script>
+      smoothScroll.init();
+    </script>
     {% endblock %}
   </body>
 </html>

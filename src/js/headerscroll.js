@@ -4,7 +4,7 @@ var ticking = false;
 function doSomething(scroll_pos) {
     console.log(scroll_pos);
     if (window.location.pathname === '/') {
-        if (scroll_pos > 543) {
+        if (scroll_pos > 400) {
             document.querySelector('.site-navbar').classList.add('site-navbar-blue');
             document.querySelector('.site-navbar').classList.remove('site-navbar-transparent');
         } else {

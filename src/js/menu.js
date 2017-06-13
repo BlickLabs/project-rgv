@@ -1,5 +1,5 @@
 (function () {
-  var mobile = window.matchMedia('(max-width: 876px)'); // Change
+  var mobile = window.matchMedia('(max-width: 767px)'); // Change
 
   function detectTouch(e) {
     if (!$(e.target).is('.site-navbar__menu-trigger') && !$(e.target).is('.site-navbar__menu-container') && !$(e.target).closest('.site-navbar__menu-container').length && $('.site-navbar__menu-container').hasClass('site-navbar__menu-container--show-menu')) {

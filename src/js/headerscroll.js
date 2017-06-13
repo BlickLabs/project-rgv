@@ -3,7 +3,7 @@ var ticking = false;
 //navbar-fixed-top
 function doSomething(scroll_pos) {
     console.log(scroll_pos);
-    if (window.location.pathname === '/') {
+    if (window.location.pathname === '/project-rgv/') {
         if (scroll_pos > 400) {
             document.querySelector('.site-navbar').classList.add('site-navbar-blue');
             document.querySelector('.site-navbar').classList.remove('site-navbar-transparent');

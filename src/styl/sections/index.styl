@@ -41,14 +41,15 @@
   height 386px
   padding-top 88px
   .section-2-content
-    width 1024px
+    max-width 1024px
+    width 100%
     margin 0 auto
     display flex
     .building-parallax-container
-      width 508px
+      width 49.6%
       .building-parallax
-        width 508px
-        height 316px
+        width 100%
+        height 100%
         background url('../img/parallax-building.png')
         background-attachment fixed
         background-size cover
@@ -57,7 +58,7 @@
         position relative
         top 55px
     .general-info
-      width 516px
+      width 60.4%
       padding 79px 42px 46px 63px
       p
         color #2b4455
@@ -153,7 +154,8 @@
           background-color #c7cbcf
 .section-4
   .section-4-content
-    width 800px
+    max-width 800px
+    width 100%
     margin 0 auto
     padding-top 85px
     padding-bottom 119px
@@ -181,6 +183,7 @@
     .sectors
       display flex 
       flex-wrap wrap
+      justify-content center
       [class*='sector-']
         width 200px
         box-sizing border-box
@@ -255,6 +258,77 @@
   letter-spacing 0.4px
   &:hover
     background-color #677d8f
+
+@media screen and (max-width 832px)
+  .section-3
+    .section-3-content
+      width 404px
+      .section-3-description
+        p
+          width 404px
+      .rgv-feature-3
+        order 5
+
+@media screen and (max-width 768px)
+  .section-1
+    .section-1-content
+      width 480px
+  .section-2
+    height 550px
+    .section-2-content
+      flex-direction column
+      .building-parallax-container
+        order 3
+        margin 0 auto
+        width 480px
+        height 298.6px
+      .general-info
+        width 90%
+        margin 0 auto
+        padding 0
+        padding-top 40px
+        text-align center
+      
+@media screen and (max-width 480px)
+  .section-1
+    .section-1-content
+      width 320px
+  .section-2
+    height 630px
+    .section-2-content
+      .building-parallax-container
+        width 480px
+        height 298.6px
+        .building-parallax
+          background-position center
+  .section-3 
+    .section-3-content
+      width 300px
+      .section-3-description 
+        p
+          width 300px
+      .section-3-features
+        justify-content center
+        [class*='rgv-feature-']
+          width 300px
+          height 300px
+          .feature-content
+            width 200px
+            .feature-description
+              p
+                font-size 13px
+  .section-4
+    .section-4-content
+      padding-bottom 80px
+      .section-4-description
+        width 90%
+        margin-left auto
+        margin-right auto
+  .section-5
+    height 358px
+    background-size cover
+    .section-5-content
+      width 90%
     
 
 

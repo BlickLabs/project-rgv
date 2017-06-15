@@ -1,0 +1,93 @@
+.footer
+  height 322px
+  background #FEFFFE
+  font-weight 800
+  padding-top 94px
+  .footer-main
+    display flex
+    justify-content center
+    margin-bottom 40px
+    .footer-row
+      height 96px
+      width 160px
+      display flex
+      align-items center
+      justify-content center
+      &.logo
+        border-right 1px solid #324a5c
+        img
+          width 78px
+          height 45px
+      &.navigation
+        border-right 1px solid #324a5c
+        .footer-nav
+          ul
+            margin 0
+            padding 0
+            li
+              list-style-type none
+              margin-bottom 8px
+              a
+                color #324a5c
+                font-size 13px
+                transition color 200ms
+                &:hover
+                  color #afa48f
+              :last-child
+                margin-bottom 0
+      &.social
+        .social-container
+          .rgv-social
+            margin-bottom 12px
+            a
+              color #324a5c
+              font-size 13px
+              display flex 
+              align-items center
+              transition color 200ms
+              &:hover
+                color #afa48f
+              img
+                margin-right 10px
+              p
+                display inline-block
+                margin 0
+          :last-child
+            margin-bottom 0
+  .footer-copyright
+    display flex 
+    justify-content center
+    margin-bottom 77px
+    p
+      font-size 10px
+@media screen and (max-width 480px)
+  .footer
+    height 370px
+    padding-top 50px
+    .footer-main
+      flex-direction column
+      width 260px
+      margin 0 auto
+      .footer-row
+        height 70px
+        &.logo
+          border-right 0
+          margin 0 auto
+        &.navigation
+          border-right 0
+          width 252px
+          margin 0 auto
+          .footer-nav
+            ul
+              li
+                display inline-block
+                margin-right 10px
+              :last-child
+                margin-right 0
+        &.social
+          margin 0 auto
+    .footer-copyright
+      margin-top 50px
+          
+          
+          

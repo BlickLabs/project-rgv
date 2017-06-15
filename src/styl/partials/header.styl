@@ -1,16 +1,18 @@
 .site-navbar
-  background white
+  height 88px
+  padding 25px 42px
   display flex
+  justify-content center
   align-items center
-  height 78px // Change
-  left 0
   position fixed
   top 0
   width 100%
-  z-index 12
-
-  & + main
-    padding-top 78px // Change
+  z-index 9
+  transition 400ms background-color ease
+.site-navbar-transparent
+  background-color transparent
+.site-navbar-blue
+  background-color #283E51
 
 .site-navbar__menu-trigger,
 .site-navbar__mobile-logo-container
@@ -20,8 +22,11 @@
   color white // Change
 
 .site-navbar__desktop-logo-container
+  position absolute
+  left 42px
   img
-    width remify(150) // Change
+    width 74px
+    height 37px
 
 .site-navbar__menu-container
   flex-grow 1
@@ -32,41 +37,50 @@
   height 100%
   display flex
   align-items center
-  justify-content flex-end
+  justify-content center
+  text-align center
+  :last-child
+    margin-right 0
 
 .site-navbar__menu-link
-  color black // Change
-  font-size remify(19) // Change
+  color #fff
+  font-size 13px
+  margin-right 40px
+  width 60px
+  transition 100ms font-family ease
+  transition 150ms color ease
 
   &:hover, &.active
-    color white // Change
+    color #7d97a6
 
-@media screen and (max-width: 876px) // Change
+@media screen and (max-width: 767px) // Change
   .site-navbar
-    justify-content space-between
-    height 56px // Change
+    justify-content flex-end
+    height 88px // Change
     padding 0 18px // Change
 
   .site-navbar__desktop-logo-container
+    left 18px
     img
-      height remify(20) // Change
-      width auto
+      height 30px // Change
+      width 60px
 
   .site-navbar__mobile-logo-container
     display block
     center-block()
-    width 70% // Change
+    width 30% // Change
 
     img
-      width 100%
+      width 74px
+      height 37px
 
   .site-navbar__menu-trigger
     display block
     float right
-    font-size 18px // Change
+    font-size 18px// Change
 
   .site-navbar__menu-container
-    background white // Change
+    background #1e3548 // Change
     height 100vh
     margin-right 0
     overflow-y auto
@@ -79,6 +93,7 @@
 
   .site-navbar__menu-container--show-menu
     right 0
+    box-shadow 0px 0px 2px 0px rgba(0,0,0,0.5)
 
   .site-navbar__menu
     margin-bottom 30px // Change
@@ -86,6 +101,7 @@
     text-align left
     height auto
     flex-wrap wrap
+    padding-left 50px
 
   .site-navbar__menu-link
     display block
@@ -93,3 +109,5 @@
     display block
     text-align left
     flex-basis 100%
+    margin-top 40px
+    font-size 16px

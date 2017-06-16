@@ -2,7 +2,7 @@ var last_known_scroll_position = 0;
 var ticking = false;
 //navbar-fixed-top
 function doSomething(scroll_pos) {
-  if (window.location.pathname === '/project-rgv/' || window.location.pathname === '/project-rgv/index.html') {
+  if (window.location.pathname === '/project-rgv/' || window.location.pathname === '/project-rgv/index.html' || window.location.pathname === '/index.html' || window.location.pathname === '/') {
     if (scroll_pos > 140) {
       document.querySelector('.site-navbar').classList.add('site-navbar-blue');
       document.querySelector('.site-navbar').classList.remove('site-navbar-transparent');

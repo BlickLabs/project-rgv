@@ -1,0 +1,123 @@
+.us-section
+  background-color #283f52
+  padding-top 88px
+  height 741px
+  display flex
+  justify-content center
+.us-content
+  display flex
+  justify-content center
+.us-section-1
+  width 512px
+  background-color #283f52
+  padding 82px 0 73px 0
+.us-title
+  max-width 366px
+  margin 0 auto 38px auto
+  width 366px
+  height 57px
+  text-align left
+.us-section-divider
+  height 1px
+  width 66.5px
+  background-color #9f9585
+.us-description
+  width 366px
+  margin 0 auto 43px auto
+  p
+    color white
+    font-size 14px
+    letter-spacing .27px
+    line-height 1.54
+.us-button
+  width 366px
+  margin 0 auto
+.us-section-2
+  width 512px
+  height 653px
+  background-size cover
+  position relative
+.us-slider
+  width 100%
+  height 100%
+  overflow hidden
+.slick-track
+  height 100%
+[class*='slide-']
+  height 100%
+  width 100%
+  background-size cover
+  display inline-block
+.slick-list
+  height 100%
+.slide-1
+  background-image url('../img/slider/image-1.png')
+.slide-2
+  background-image url('../img/slider/image-2.png')
+.slide-3
+  background-image url('../img/slider/image-3.png')
+  
+.slider-manager
+  background-color rgba(167,157,140,.9)
+  width 100%
+  height 38px
+  padding 0 18px
+  position absolute
+  display flex
+  align-items center
+  justify-content space-between
+  bottom 0
+[class*='-arrow']
+  cursor pointer
+.slick-dots
+  position absolute
+  width 26px
+  display flex
+  margin 0
+  padding 0
+  bottom 13px
+  left 246px
+  z-index 2
+  :last-child
+    margin-right 0
+  li
+    list-style none
+    display inline-block
+    margin-right 4px
+    button
+      width 6px
+      height 6px
+      border-radius 50%
+      border 0
+      padding 0
+      background-color #fff
+      cursor pointer
+  li.slick-active
+    button
+      background-color #283e51
+
+@media screen and (max-width 1023px)
+  .us-section
+    height 1412px
+  .us-content
+    flex-direction column
+    padding 40px 0 40px 0
+    height 1200px
+@media screen and (max-width 480px)
+  .us-content
+    width 100%
+  .us-section-1
+    width 280px
+    margin 0 auto
+    padding-top 120px
+  .us-description
+    width 280px
+  .us-section-2
+    width 100%
+    
+  [class*='slide-']
+    background-position center
+  .slick-dots
+    left calc(50% - 5px)
+    
+    

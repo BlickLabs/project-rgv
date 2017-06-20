@@ -1,0 +1,128 @@
+.contact-container
+  padding-top 88px
+  height 800px
+  display flex
+[class*='contact-section-']
+  width 512px
+  height 722px
+.contact-section-1
+  background-image url('../img/backgrounds/contact.jpg');
+  background-size cover
+.contact-section-2
+  background-color #f7f7f7
+[class*='contact-section-content-']
+  width 325px
+  margin 0 auto
+  height 100%
+  padding-top 56px
+  font-size 15px
+  text-align center
+  
+.contact-title
+  font-size 36px
+.contact-divider
+  height 1px
+  background-color #afa48f
+  width 66px
+  margin 0 auto 40px auto
+
+.section-description
+  line-height 1.54
+.section-email
+  margin-top 7px
+  
+input
+  width 100%
+  border-radius 2px
+  padding 11px 15px
+  background-color transparent
+
+textarea
+  width 100%
+  height 136px
+  border-radius 2px
+  border 1px solid #e2e2e2
+  padding 9px 15px
+  background-color transparent
+  &::placeholder
+    color #d9d9d9
+
+.contact-section-content-1
+  .section-description
+    color #fff
+  .section-email
+    color #fff
+    margin-bottom 70px
+  .form-section-1
+    input
+      height 37px
+      margin-bottom 19px
+      border 1px solid #e2e2e2
+      font-size 13px
+      color #d9d9d9
+      &::placeholder
+        color #d9d9d9
+    textarea
+      font-size 13px
+      border 1px solid #e2e2e2
+      color #d9d9d9
+      margin-bottom 31px
+      &::placeholder
+        color #d9d9d9
+.contact-section-content-2
+  width 363px
+  .section-description
+    color #283f52
+  .section-email
+    color #283f52
+    font-weight bold
+    margin-bottom 45px
+  .form-section-2
+    width 325px
+    margin 0 auto
+    input
+      height 45px
+      margin-bottom 23px
+      border 1px solid #cecece
+      font-size 13px
+      color #d2d2d2
+      &::placeholder
+        color #d2d2d2
+    textarea
+      font-size 13px
+      border 1px solid #cecece
+      color #d2d2d2
+      &::placeholder
+        color #d2d2d2
+    :last-child
+      margin-bottom 31px
+
+.align-right
+  text-align right
+
+@media screen and (max-width 767px)
+  .contact-container
+    padding-top 60px
+
+@media screen and (max-width 749px)
+  .contact-container
+    flex-direction column
+    height 1522px
+  .contact-section-1, .contact-section-2
+    width 100%
+
+@media screen and (max-width 370px)
+  .contact-container
+    height 1489px
+  .contact-section-2
+    height 747px
+  .contact-section-content-2
+    width 300px
+  .contact-section-content-1, 
+  .contact-section-content-2 .form-section-2
+    width 300px
+  
+    
+    
+
+

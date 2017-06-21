@@ -14,7 +14,12 @@ function doSomething(scroll_pos) {
 }
 doSomething();
 window.addEventListener('scroll', function(e) {
-  last_known_scroll_position = window.scrollY;
+  if (e.view) {
+    last_known_scroll_position = e.view.pageYOffset;
+  }
+  else {
+    last_known_scroll_position = window.scrollY;
+  }
   if (!ticking) {
     window.requestAnimationFrame(function() {
       doSomething(last_known_scroll_position);

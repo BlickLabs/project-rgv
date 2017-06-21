@@ -1,12 +1,12 @@
 .contact-container
   padding-top 88px
-  height 810px
+  height 819px
   display flex
   justify-content center
   background-color #2f475a
 [class*='contact-section-']
   width 512px
-  height 722px
+  height 731px
 .contact-section-1
   background-image url('../img/backgrounds/contact.jpg');
   background-size cover
@@ -21,7 +21,8 @@
   text-align center
   
 .contact-title
-  font-size 36px
+  h2
+    font-size 36px
 .contact-divider
   height 1px
   background-color #afa48f
@@ -49,6 +50,10 @@ textarea
   &::placeholder
     color #d9d9d9
 
+[class*='form-section-']
+  text-align left
+  font-size 12px
+
 .contact-section-content-1
   .section-description
     color #fff
@@ -71,6 +76,8 @@ textarea
       margin-bottom 31px
       &::placeholder
         color #d9d9d9
+    label.error
+      top -16px
 .contact-section-content-2
   width 363px
   .section-description

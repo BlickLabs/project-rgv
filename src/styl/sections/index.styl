@@ -28,9 +28,13 @@
   height 100vh
   background-image url('../img/backgrounds/section-1.jpg')
   background-size cover
+  display -webkit-flex
   display flex
+  -webkit-flex-direction column
   flex-direction column
+  -webkit-justify-content center
   justify-content center
+  -webkit-align-items center
   align-items center
   .section-1-content
     width 662px
@@ -43,11 +47,13 @@
       margin 0
       color #fff
   .vertical-slide
+    display -webkit-flex
     display flex
     justify-content center
     flex-direction column
     position absolute
     bottom 0
+    left 49%
     .down-arrow
       width 15px
       height 15px
@@ -74,7 +80,7 @@
       width 49.6%
       .building-parallax
         width 100%
-        height 100%
+        height 285px
         background url('../img/parallax-building.jpg')
         background-attachment fixed
         background-size cover
@@ -299,6 +305,12 @@
         margin 0 auto
         width 480px
         height 298.6px
+        .building-parallax
+          background url('../img/parallax-building-small.png')
+          width 480px
+          height 298px
+          background-size cover
+          background-position center center
       .general-info
         width 90%
         margin 0 auto

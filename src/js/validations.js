@@ -11,7 +11,7 @@
       message: {
         required: true,
         minlength: 1,
-        maxlength: 140
+        maxlength: 500
       }
     }
   });
